@@ -1,0 +1,9 @@
+/* Tailwind CSS v4+ syntax */
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: oklch(96.7% 0.003 264.542);
+}
