@@ -32,7 +32,7 @@ const End = () => {
               href="mailto:hello@stutpak.com"
               className="text-[#2a4c46] font-semibold block mt-3 underline"
             >
-              hello@stutpak.com
+              {/* hello@stutpak.com */}
             </a>
             <a
               href="tel:+31681042370"

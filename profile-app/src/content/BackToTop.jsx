@@ -7,7 +7,7 @@ export const BackToTop = () => {
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10"
+        className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"

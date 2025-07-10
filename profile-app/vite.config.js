@@ -7,6 +7,6 @@ export default defineConfig({
    server: {
     host: '0.0.0.0', // Accept connections from all IPs
     port: 3001 ,// Optional: specify port
-    allowedHosts: ['b66d-122-173-27-84.ngrok-free.app']  
+    allowedHosts: ['fe3f0765a916.ngrok-free.app']  
   }
 })

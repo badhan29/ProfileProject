@@ -3,7 +3,6 @@ import img2 from "../assets/chat.jpg";
 import img3 from "../assets/dashboard.jpg";
 import img4 from "../assets/Mcq.jpg";
 
-
 const Project = () => {
   return (
     <div className="relative w-full  bg-[#dce4d4] py-12 px-4 sm:px-8 text-gray-700 font-serif  hide-scrollbar scroll-smooth">
@@ -15,7 +14,7 @@ const Project = () => {
       </h4>
 
       <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 ">
-        <div className="relative bg-red-400 aspect-[5/4] rounded overflow-hidden shadow-md">
+        <div className="relative bg-red-400 aspect-[5/4] rounded-2xl overflow-hidden shadow-md transition-transform duration-300 ease-in-out hover:scale-105 ">
           <img
             src={img1}
             alt="Project 1"
@@ -31,7 +30,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="relative bg-red-400 aspect-[5/4] rounded overflow-hidden shadow-md">
+        <div className="relative bg-red-400 aspect-[5/4] rounded-2xl overflow-hidden shadow-md transition-transform duration-300 ease-in-out hover:scale-105 ">
           <img
             src={img2}
             alt="Project 2"
@@ -47,7 +46,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="relative bg-red-400 aspect-[5/4] rounded overflow-hidden shadow-md">
+        <div className="relative bg-red-400 aspect-[5/4] rounded-2xl overflow-hidden shadow-md transition-transform duration-300 ease-in-out hover:scale-105">
           <img
             src={img3}
             alt="Project 3"
@@ -63,7 +62,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="relative bg-red-400 aspect-[5/4] rounded overflow-hidden shadow-md">
+        <div className="relative bg-red-400 aspect-[5/4] rounded-2xl overflow-hidden shadow-md transition-transform duration-300 ease-in-out hover:scale-105">
           <img
             src={img4}
             alt="Project 4"

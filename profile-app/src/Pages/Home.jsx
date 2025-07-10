@@ -1,8 +1,14 @@
+import { HelmetProvider } from "react-helmet-async";
 import "../App.css";
 import Gif from "../assets/run.gif";
 
 const Home = () => {
   return (
+    <>
+    <HelmetProvider>
+      <title>Home | Memento</title>
+      <meta name="description" content="Welcome to Memento website.This is home section " />
+    </HelmetProvider>
     <div className="relative w-full h-screen overflow-hidden flex items-center justify-center text-gray-950 bg-gray-100">
       
       <div className="hidden md:block fixed top-3/4 left-[-5%] -translate-y-1/2 w-[400px] h-[400px] bg-[#dce4d4] opacity-75       
@@ -17,11 +23,8 @@ const Home = () => {
         {/* Left section */}
         <div className="w-full md:w-1/2 flex justify-start lg:pl-20 z-1">
           <div className="flex flex-col text-left w-full max-w-2xl">
-            <h1 className="mb-8 font-serif font-bold mt-15 md:mt-0">
-              <span className="inline md:hidden text-2xl sm:text-3xl">
-                Welcome!
-              </span>
-              <span className="hidden md:inline text-3xl sm:text-3xl md:text-4xl lg:text-5xl  ">
+            <h1 className="mb-8 font-serif font-bold mt-15 md:mt-0">  
+              <span className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl  ">
                 Hello &amp; <br />
                 Welcome!
               </span>
@@ -30,7 +33,7 @@ const Home = () => {
             <p className="text-base sm:text-lg md:text-xl lg:text-xl font-mono font-medium leading-relaxed mb-6">
               Hey, I'm Gaurav Badhan, a full-stack software 
               
-              developer based in Punjab, India.<br/>
+              developer based in India.<br/>
               <br />
               I design and build robust web applications.
               
@@ -59,6 +62,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
