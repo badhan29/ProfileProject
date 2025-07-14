@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 import { useNavigate, Link } from "react-router-dom";
 
 const Header = () => {
@@ -64,7 +64,7 @@ const Header = () => {
               <a
                 onClick={goToAbout}
                 href="#About"
-                className="md:hover:text-red-700"
+                className="hover:text-red-700"
               >
                 About
               </a>
@@ -73,7 +73,7 @@ const Header = () => {
               <a
                 onClick={goToContact}
                 href="#Contact"
-                className="md:hover:text-red-700"
+                className="hover:text-red-700"
               >
                 Contact
               </a>
@@ -90,7 +90,7 @@ const Header = () => {
           <Link to="/projects" className="hover:text-red-700">
             Projects
           </Link>
-          <a onClick={goToAbout} className="hover:text-red-700 " href="#about">
+          <a onClick={goToAbout} className="hover:text-red-700 " href="#About">
             About
           </a>
           <a onClick={goToContact} className="hover:text-red-700" href="#Contact">
