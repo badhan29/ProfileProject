@@ -1,7 +1,7 @@
 import img1 from "../assets/video.webp";
 import img2 from "../assets/chat.webp";
 import img3 from "../assets/dashboard.webp";
-import img4 from "../assets/Mcq.webp";
+import img4 from "../assets/mcq.webp";
 
 const Project = () => {
   return (
