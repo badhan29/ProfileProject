@@ -27,7 +27,6 @@ const Header = () => {
           alt="Logo"
           className="h-12 md:h-20 w-auto object-contain"
         />
-        {/* Hamburger Icon for Mobile */}
         <button
           onClick={toggleNavbar}
           className="block md:hidden text-2xl text-gray-800 focus:outline-none"
@@ -35,7 +34,7 @@ const Header = () => {
           &#9776;
         </button>
 
-        {/* Mobile Menu (slide in from right) */}
+        {/* Mobile view */}
         <div
           className={`fixed top-0 right-0 w-full sm:w-[80%] h-full bg-white/10 backdrop-blur-lg rounded-xl border border-white/20 z-40 transform transition-transform duration-300 ease-in-out ${
             isOpen ? "translate-x-0" : "translate-x-full"
@@ -52,36 +51,28 @@ const Header = () => {
           <ul className="flex flex-col items-center justify-center gap-10 text-2xl font-semibold text-gray-900 mt-12">
             <li>
               <Link to="/" className="hover:text-red-700">
-            Home
-          </Link>
+                Home
+              </Link>
             </li>
             <li>
               <Link to="/projects" className="hover:text-red-700">
-            Projects
-          </Link>
+                Projects
+              </Link>
             </li>
             <li>
-              <a
-                onClick={goToAbout}
-                href="#About"
-                className="hover:text-red-700"
-              >
+              <button onClick={goToAbout} className="hover:text-red-700">
                 About
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                onClick={goToContact}
-                href="#Contact"
-                className="hover:text-red-700"
-              >
+              <button onClick={goToContact} className="hover:text-red-700">
                 Contact
-              </a>
+              </button>
             </li>
           </ul>
         </div>
 
-        {/* Desktop Menu */}
+        {/* Desktop view */}
         <nav className="hidden md:flex md:gap-8 gap-4 text-xl lg:text-2xl font-serif font-bold text-gray-900">
           <Link to="/" className="hover:text-red-700">
             Home
@@ -90,12 +81,12 @@ const Header = () => {
           <Link to="/projects" className="hover:text-red-700">
             Projects
           </Link>
-          <a onClick={goToAbout} className="hover:text-red-700 " href="#About">
+          <button onClick={goToAbout} className="hover:text-red-700">
             About
-          </a>
-          <a onClick={goToContact} className="hover:text-red-700" href="#Contact">
+          </button>
+          <button onClick={goToContact} className="hover:text-red-700">
             Contact
-          </a>
+          </button>
         </nav>
       </div>
     </header>

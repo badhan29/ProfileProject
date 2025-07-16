@@ -1,4 +1,6 @@
 import { BackToTop } from "./BackToTop";
+import { useLocation } from "react-router-dom";
+
 import { lazy, Suspense, useEffect } from "react";
 
 import Header from "./Header";
@@ -12,6 +14,27 @@ const About = lazy(() => import("../components/About"));
 const End = lazy(() => import("../components/End"));
 
 export default function FullPageLayout() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToId = location?.state?.scrollTo;
+    if (scrollToId) {
+      setTimeout(() => {
+        const target = document.getElementById(scrollToId);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth"});
+
+          // Clear the state so it doesn't keep scrolling on back/forward
+          window.history.replaceState(
+            {},
+            document.title,
+            window.location.pathname
+          );
+        }
+      }, 100); // Delay for lazy components to load
+    }
+  }, [location]);
+
   useEffect(() => {
     const removeHash = () => {
       history.replaceState(
