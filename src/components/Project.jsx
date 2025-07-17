@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img1 from "../assets/video.webp";
 import img2 from "../assets/chat.webp";
 import img3 from "../assets/dashboard.webp";
@@ -80,12 +81,12 @@ const Project = () => {
       </div>
 
       <div className="flex justify-center mt-10">
-        <a
-          href="/projects"
+        <Link
+          to="/projects"
           className="w-45 sm:w-60 px-3 py-2 sm:px-4 sm:py-3 flex justify-center text-center font-bold text-base sm:text-lg bg-red-500 opacity-80 text-black rounded-full md:hover:bg-gray-900 hover:opacity-100 hover:text-white md:hover:text-xl  transition duration-300"
         >
           Projects &nbsp;Detail
-        </a>
+        </Link>
       </div>
     </div>
   );
