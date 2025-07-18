@@ -3,7 +3,6 @@
   -ms-overflow-style: none;
   scroll-behavior: smooth;
 }
-
 .hide-scrollbar::-webkit-scrollbar {
   display: none; 
 }

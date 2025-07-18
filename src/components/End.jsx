@@ -4,7 +4,7 @@ import "../App.css";
 const End = () => {
   return (
     <>
-      <div className="relative   bg-[#dce4d4] min-h-screen flex flex-col items-center justify-center px-4 py-10">
+      <div className="relative bg-[#dce4d4] min-h-screen flex flex-col items-center justify-center px-4 py-10">
         
         <h1 className="text-5xl font-bold mb-6 text-gray-800">Contact</h1>
         <p className="text-lg text-gray-700 mb-10 text-center max-w-2xl">
@@ -51,7 +51,8 @@ const End = () => {
             <p className="text-gray-700">NL001390938B63</p>
           </div>
         </div>
-        <footer className="w-[100%] h-auto overflow-hidden relative bg-[#dce4d4] mt-10">
+      </div>
+      <footer className="w-[100%] h-fit overflow-hidden relative bg-[#dce4d4] pb-1">
           <iframe
             title="Animation illustration"
             name="animation-iframe"
@@ -60,7 +61,6 @@ const End = () => {
             loading="lazy"
           ></iframe>
         </footer>
-      </div>
       
     </>
   );

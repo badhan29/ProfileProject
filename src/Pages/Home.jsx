@@ -16,11 +16,11 @@ const Home = () => {
 
       <div className="hidden md:block fixed top-1/4 right-[-8%] -translate-y-1/2 w-[600px] h-[600px] bg-[#dce4d4] opacity-75 rounded-full animate-float z-0" />
 
-      <div className=" bubbleRed fixed top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[#dce4d4] md:bg-red-500 md:opacity-20 rounded-full z-"/>
+      <div className=" bubbleRed absolute md:fixed top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[#dce4d4] md:bg-red-500 md:opacity-20 rounded-full z-"/>
 
 
       <div className="w-full h-fit flex flex-col md:flex-row items-center justify-center p-6">
-        {/* Left section */}
+      
         <div className="w-full md:w-1/2 flex justify-start lg:pl-20 z-1">
           <div className="flex flex-col text-left w-full max-w-2xl">
             <h1 className="mb-8 font-serif font-bold mt-15 md:mt-0">  
@@ -52,12 +52,12 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right */}
         <div className="w-full mb-6 md:w-1/3 md:mb-0 mx-auto md:mx-0 z-1 ">
           <img
             src={Gif}
             className="w-full object-contain max-h-72 md:max-h-full"
             alt="Illustration"
+            loading="lazy"
           />
         </div>
       </div>

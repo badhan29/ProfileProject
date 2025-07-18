@@ -66,6 +66,8 @@ export default function FullPageLayout() {
           </div>
           <div id="Standout" className="md:snap-start bg-relative">
             <StandoutPage />
+          </div>
+          <div id="Standout" className="md:snap-start bg-relative">
             <Touch />
           </div>
           <div id="Connect" className="md:snap-start bg-relative ">

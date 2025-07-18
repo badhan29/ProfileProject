@@ -3,7 +3,7 @@ export const BackToTop = () => {
     <a
       href="#Home"
       className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 md:bottom-10 md:right-10 z-50 bg-red-500 opacity-70 hover:bg-red-600 hover:opacity-100 text-white p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300"
-      title="Back to Top"
+      
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
