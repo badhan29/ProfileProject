@@ -79,7 +79,7 @@ export default function FullPageLayout() {
           >
             <About />
           </div>
-          <div id="Contact" className="md:snap-end flex flex-col">
+          <div id="Contact" className="md:snap-start flex flex-col">
             <End />
           </div>
         </div>
