@@ -14,7 +14,7 @@ const About = lazy(() => import("../components/About"));
 const End = lazy(() => import("../components/End"));
 
 export default function FullPageLayout() {
-  const location = useLocation();
+  const location = useLocation(); 
 
   useEffect(() => {
     const scrollToId = location?.state?.scrollTo;
@@ -75,7 +75,10 @@ export default function FullPageLayout() {
           </div>
           <div
             id="About"
-            className="sticky top-0 z-0 md:snap-start bg-relative "
+            className="bg-relative 
+                      sticky top-0 z-0       
+                      md:static md:z-auto    
+                      md:snap-start"
           >
             <About />
           </div>

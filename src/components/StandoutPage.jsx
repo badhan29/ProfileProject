@@ -1,6 +1,6 @@
 const StandoutPage = () => {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden flex flex-col-reverse md:flex-row items-center justify-center px-6  text-gray-950 bg-gray-100">
+    <div className="relative w-full min-h-screen overflow-hidden flex flex-col-reverse md:flex-row items-center justify-center px-6  text-gray-950 bg-gray-100 py-10">
       <div
         className="absolute top-1/2 right-5 md:right-20 -translate-y-1/2
                    w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px]

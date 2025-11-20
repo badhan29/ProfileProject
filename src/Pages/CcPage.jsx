@@ -14,7 +14,7 @@ const Ccpage = () => {
       </HelmetProvider>
       <div className=" h-screen overflow-scroll md:snap-start p-4 md:p-12 flex flex-col hide-scrollbar scroll-smooth">
         <Header />
-        <div className="min-h-screen bg-gray-100 text-gray-800 p-8 md:p-12 mb-20 font-sans relative hide-scrollbar scroll-smooth">
+        <div className="min-h-fit bg-gray-100 text-gray-800 p-8 md:p-12 mb-20 font-sans relative hide-scrollbar scroll-smooth">
           <div className=" hidden md:block bubble absolute top-2  right-0 md:left-[-15%] -translate-y-2/3 w-[600px] h-[600px]  bg-[#dce4d4] rounded-full animate-float z-0 " />
 
           <div className="max-w-4xl mx-auto mt-15 md:mt-0 relative">

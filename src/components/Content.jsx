@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Content = () => {
   return (
     
-    <div className="relative w-full overflow-hidden flex flex-col items-center justify-center text-black  bg-[#dce4d4] p-4 sm:p-6">
+    <div className="relative w-full md:min-h-screen overflow-hidden flex flex-col items-center justify-center text-black  bg-[#dce4d4] p-4 sm:p-6">
       <h1 className="text-3xl sm:text-4xl md:text-5xl mt-6 mb-8 font-serif font-extrabold z-10 text-center">
         Demo reel
       </h1>
